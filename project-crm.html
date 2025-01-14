@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-crm.css"> 
+	<link href="main.a0ef648aaae13a2d3ab7.css" rel="stylesheet" />
+	<link rel="icon" href="letter-r.png" />
+	<script defer="defer" src="main.a434f8dfd607a35d7cdd.js"></script>
+    <title>Roman Knoef | Full Stack CRM</title>
+</head>
+<body>
+    <div class="main-bg">
+		<div class="canvas">
+		</div>
+	</div>
+    <div class="projects" id="projects">
+		<h2 class="section-heading" id="CRM-title">Full Stack CRM Application</h2>
+		<div class="project project-left">
+			<a>
+			<div class="static retro">
+				<div class="project__image-image">
+				<img src="imgs/CRM_mainzoom.png" alt=""/>
+				</div>
+			</div>
+			</a>
+			<div class="project__info">
+			<h3 class="project__title">Necessity <br/>of the Application</h3>
+			<p class="project__description">Efficiently managing customers, moves, and schedules is critical for a moving company to optimize operations and provide seamless service. </br>The application addresses these needs by functioning as a CRM (Customer Relationship Management) system. It enables the company to maintain detailed records of customer relationships, track scheduled moves, and provide real-time access to relevant data for both clients and administrators.</p>
+			</div>
+		</div>
+		<h2 class="analysis-title" id="h3-title">Problems Addressed and Solutions</h2>
+
+		<div class="project project-right">
+			<div class="project__info">
+			<h3 class="project__title">1. Customer Management</h3>
+			<ul class="solutions-list">
+                <li><b>Problem</b>: Tracking customer details manually leads to inefficiencies and errors.</li>
+                <li><b>Solution</b>: The <span class="module">Klanten</span> module (customers management) enables the addition, updating, and retrieval of customer information using a dynamic UI backed by a SOAP API for interaction with E-boekhouden's database. Features include creating new customers, editing their information, and viewing sorted lists of recently added relations​.</li>
+            </ul>
+
+			</div>
+			<a>
+			<div class=" todo static">
+				<div class="project__image-image" id="smally">
+				<img src="imgs/klantenedit.png" alt=""/>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="project project-left">
+			<a>
+			<div class="static weather">
+				<div class="project__image-image">
+				<img src="imgs/Verhuizingen.png" alt=""/>
+				</div>
+			</div>
+			</a>
+			<div class="project__info">
+			<h3 class="project__title">2. Move Scheduling and Management</h3>
+			<ul class="solutions-list">
+                <li><b>Problem</b>: Coordinating move schedules and ensuring complete move details are captured can be complex.</li>
+                <li><b>Solution</b>: The <span class="module">Verhuizingen</span> module (moves management) supports the addition and management of moves. It includes nested forms to capture comprehensive move details such as start and destination addresses, cubic meters, and optional house visits. Validation ensures all critical fields are filled, reducing errors​.</li>
+            </ul>
+
+			</div>
+		</div>
+		<div class="project project-right">
+			<div class="project__info">
+			<h3 class="project__title">3. Authentication and Security </h3>
+			<ul class="solutions-list">
+                <li><b>Problem</b>: Unauthorized access to sensitive CRM data.</li>
+                <li><b>Solution</b>: Secure login and JWT-based authentication ensure only authorized users can access the system. Sessions automatically expire, requiring re-authentication for continued use​.</li>
+            </ul>
+			</div>
+			<a>
+			<div class="static todo">
+				<div class="project__image-image">
+				<img src="imgs/Login.png" alt=""/>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="project project-left">
+			<a>
+			<div class="static weather">
+				<div class="project__image-image">
+				<img src="imgs/dashboard.png" alt=""/>
+				</div>
+			</div>
+			</a>
+			<div class="project__info">
+			<h3 class="project__title">4. Centralized Dashboard</h3>
+			<ul class="solutions-list">
+                <li><b>Problem</b>: Problem: Lack of centralized visibility into operations.</li>
+                <li><b>Solution</b>: A dashboard displays key metrics such as upcoming moves and recent customer additions. This provides administrators with a bird’s-eye view of critical operations.</li>
+            </ul>
+
+			</div>
+		</div>
+		<h2 class=" analysis-title" id="h3-title" >Development and Technical Implementation</h2>
+		<h3 class="subtitle">This application showcases a variety of skills in building a full-stack application, emphasizing:</h3>
+	</div>
+
+	<div class="snippet snippet-right">
+		<div class="snippet-info">
+			<h3 class="project__title">1. Frontend Development </h3>
+			<ul class="solutions-list">
+				<li>Built using React, with components modularized for scalability and reusability.</li>
+				<li>Dynamic forms like in <span class="module">AddMove</span> and <span class="module">AddRelation</span> use state management for real-time updates and validations​.</li>
+				<li>Styling is applied consistently through modular CSS, providing a professional and cohesive look.</li>
+			</ul>
+		</div>
+		<a>
+			<div class=" todo snippet-container">
+				<div class="snippet-image">
+				<img class="snippet-image" src="imgs/AddMoveSnippet.png" alt=""/>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="snippet snippet-left">
+		<a>
+		<div class="snippet-container weather">
+			<div class="class="snippet-image"">
+			<img class="snippet-image" src="imgs/useAuthSnippet.png" alt=""/>
+			</div>
+		</div>
+		</a>
+		<div class="snippet-info">
+		<h3 class="project__title">2. Backend Development </ h3>
+		<ul class="solutions-list">
+			<li>Node.js and Express power the backend, with RESTful APIs and SOAP integrations.</li>
+			<li>Protected routes ensure only authenticated requests are processed, demonstrated by middleware in <span class="module">useAuth</span>.</li>
+		</ul>
+
+		</div>
+	</div>
+	<div class="snippet snippet-right">
+		<div class="snippet-info">
+			<h3 class="project__title">3. Data Management</h3>
+			<ul class="solutions-list">
+				<li>MongoDB is used for data persistence, ensuring scalability and flexibility for future features.</li>
+				<li>The SOAP integration with external systems supports seamless synchronization of customer data, allowing updates and additions via APIs​.</li>
+			</ul>
+		</div>
+		<a>
+			<div class=" todo snippet-container">
+				<div class="snippet-image">
+				<img class="snippet-image" src="imgs/serverSnippet.png" alt=""/>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="snippet snippet-left">
+		<a>
+		<div class="snippet-container weather">
+			<div class="class="snippet-image"">
+			<img class="snippet-image" src="imgs/AddMoveSnippet2.png" alt=""/>
+			</div>
+		</div>
+		</a>
+		<div class="snippet-info">
+		<h3 class="project__title">4. Validation and Error Handling </ h3>
+		<ul class="solutions-list">
+			<li>Both frontend and backend include thorough validation. For example, form submissions ensure all required fields are completed before allowing submission​.</li>
+		</ul>
+
+		</div>
+	</div>
+
+	<div class="snippet snippet-right">
+		<div class="snippet-info" id="last-description">
+			<h3 class="project__title">5. Visualization</h3>
+			<ul class="solutions-list">
+				<li>Components like the dashboard incorporate visualization elements for summarizing data, e.g., upcoming moves or recent customer additions, enhancing usability. <p></p><br /> For instance, the dashboard uses tabular layouts to display key metrics such as a list of the next four scheduled moves and the last four added customer relations, sorted dynamically. <br />This concise presentation allows users to quickly grasp essential information without navigating through multiple pages, emphasizing efficiency and accessibility.</li>
+			</ul>
+		</div>
+		<a>
+			<div class=" todo snippet-container">
+				<div class="snippet-image">
+				<img class="snippet-image" id="last-image" src="imgs/Dashboardsnippet.png" alt=""/>
+				</div>
+			</div>
+		</a>
+	</div>
+
+</body>
+</html>

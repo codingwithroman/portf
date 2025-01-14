@@ -1,0 +1,27 @@
+$color-text: #fafafa;
+$color-red: #ff4d5a;
+$color-background: rgb(26, 26, 26);
+$color-background-light: rgb(40, 40, 40);
+$color-blue: rgb(81, 162, 233);
+$color-blue-dark: rgb(50, 22, 187);
+
+.section-heading {
+  position: relative;
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin-top: 9rem;
+  margin-bottom: 13rem;
+
+  // text-shadow: 0 0 1px $color-background, 0 0 1px $color-background,
+  //   0 0 1px $color-background, 0 0 1px $color-background;
+
+  z-index: 9999;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 10rem;
+  }
+
+  @media (max-width: 1000px) {
+    margin-top: 6rem;
+  }
+}

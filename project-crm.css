@@ -1,0 +1,265 @@
+:root {
+    margin: 0;
+    padding: 0;
+}
+
+#CRM-title::before {
+    content: '';
+    border-bottom: 18px solid #D43F8DFF;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 3.5rem;
+    top: 6.3rem;
+    z-index: -1;
+}
+
+#h3-title::before {
+    content: '';
+    border-bottom: 15px solid #D43F8DFF;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 3.5rem;
+    top: 5.6rem;
+    z-index: -1;
+}
+
+
+.solutions-list {
+    position:relative;
+    margin-top:3rem;
+    line-height: 2;
+    font-size:1.8rem;
+    font-weight:500;
+    z-index:999909999;
+    list-style-type: circle;
+
+    li {
+        margin: 1.5rem 0;
+    }
+}
+
+.module {
+    background-color: rgb(85, 85, 85);
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.static {
+    position: relative;
+    height: 70rem;
+    width: 100rem;
+    background-color: #0250C5FF;
+    transition: all 0s;
+    cursor: pointer;
+}
+
+.subtitle {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 9999;
+    font-weight: 500;
+    margin-bottom: 15rem;
+}
+
+.analysis-title {
+    position: relative;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+    z-index: 9999;
+}
+
+.snippet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14rem;
+}
+
+.snippet-image {
+    width: 100%;
+    position: relative;
+}
+
+.snippet-container {
+    position: relative;
+    width: 98rem;
+    transition: all 0s;
+}
+
+.snippet-info {
+    position: relative;
+    height: fit;
+    margin: 9rem;
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.snippet-right {
+    margin-right: 7rem;
+}
+
+.snippet-left {
+    margin-left: 7rem;
+}
+
+#last-description {
+    width: 90rem;
+    top: -50rem;
+}
+
+#last-image {
+    width: 80rem;
+}
+
+
+@media (max-width: 560px) {
+    html {
+        font-size: 40%;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    
+
+    .main-bg, .canvas {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #CRM-title {
+        text-align: center;
+    }
+    #CRM-title::before {
+        content: '';
+        border-bottom: 18px solid #D43F8DFF;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        left: 2rem;
+        top: 6.3rem;
+        z-index: -1;
+    }
+
+    #h3-title {
+        text-align: center;
+    }
+
+    #h3-title::before {
+        content: '';
+        border-bottom: 15px solid #D43F8DFF;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        left: 2rem;
+        top: 5.6rem;
+        z-index: -1;
+    }
+
+    .snippet-container {
+        width: 100%;
+        margin: 5rem 0 10rem 0;
+    }
+
+    .static {
+        height: 30rem;
+        width: 39rem;
+    }
+
+    .solutions-list {
+        position:relative;
+        margin-top:3rem;
+        line-height: 1.5;
+        font-size:1.8rem;
+        font-weight:500;
+        z-index:999909999;
+        list-style-type: circle;
+    
+        li {
+            margin: 1.5rem 0;
+        }
+    }
+    
+
+    .project {
+        margin-bottom: 12rem;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .project-left .project__info {
+        left: 0;
+        margin-right: 0;
+    }
+    
+
+    .project__image-container {
+        height: 30rem;
+        width: 39rem;
+    }
+    .project-right {
+        margin-right: 0;
+    }
+    .project-right .project__info {
+        right: 0;
+        margin-left: 0;
+    }
+    .project__info {
+        top: 2rem;
+    }
+    .project__info {
+        background-color: rgba(26, 26, 26, 0.5);
+    }
+    .project__title {
+        font-size: 2.5rem;
+    }
+    .project__description {
+        margin-top: 2rem;
+    }
+
+    #last-description {
+        width: 100%;
+        top: 0;
+        padding: 2rem;
+    }
+
+
+    .snippet {
+        flex-direction: column;
+    }
+
+    .snippet-left, 
+    .snippet-right {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .snippet-left a {
+        order: 2;
+    }
+
+    .snippet-left .snippet-info {
+        order: 1;
+    }
+
+    .snippet-info {
+        margin: 2rem;
+    }
+    
+    #last-image {
+        width: 100%;
+    }
+}
