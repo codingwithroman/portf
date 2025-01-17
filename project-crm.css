@@ -154,7 +154,7 @@
 }
 
 
-@media (max-width: 560px) {
+@media (max-width: 440px) {
     html {
         font-size: 40%;
     }
@@ -207,7 +207,15 @@
 
     .static {
         height: 30rem;
-        width: 39rem;
+        width: 51rem;
+    }
+
+    .project__info#CRM__info__right {
+        right: -27rem;
+    }
+
+    .project__info#CRM__info__left {
+        left: -26rem;
     }
 
     .solutions-list {
